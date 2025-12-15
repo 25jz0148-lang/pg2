@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": { // ファイル一覧に表示しないファイルの拡張子を登録
+			"**/*.class": true,
+			"**/*.exe": true
+		},
+		"editor.fontSize": 16, // エディタのフォントサイズ
+		"window.zoomLevel": 1.5, // 全体の表示倍率 (0.5倍刻み) (1.0=125%)　デバッガの変数表示に影響
+		"terminal.integrated.fontSize": 16, // ターミナルのフォントサイズ
+		"debug.console.fontSize": 18, //　デバッグコンソールのフォントサイズ
+		"java.format.enabled": true, // Javaのフォーマッターを有効化
+		"java.format.settings.url": "formatter.xml", // フォーマッタファイルの指定
+		"java.format.settings.profile": "JZ_Style", // フォーマッタタイプの指定
+		"editor.formatOnSave": true, // ファイル保存時に自動フォーマット
+		"editor.formatOnPaste": true, // ファイル貼り付け時に自動フォーマット
+		"editor.insertSpaces": true, // Tabコードの代わりにスペース入力
+		"editor.indentSize": "tabSize", // インデント位置はTabサイズごと
+		"editor.renderControlCharacters": true, // 制御文字を表示
+		"files.insertFinalNewline": true, //　ファイルの最後に改行を挿入
+		"java.jdt.ls.java.home": "", //　デバッガ時のjava.home はJAVA_HOME環境変数と同じとする
+		"java.jdt.ls.vmargs": "-Dfile.encoding=UTF-8", // デバッグ時の文字コード指定
+		// "terminal.integrated.env.windows": {
+		// 	"JAVA_TOOL_OPTIONS": "-Dfile.encoding=UTF-8" // Javaコンパイル時の文字コード指定
+		// },
+		"[java]": {
+			"editor.tabCompletion": "on",
+			"editor.tabSize": 4,
+		},
+	}
+}

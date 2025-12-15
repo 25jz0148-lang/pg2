@@ -1,0 +1,21 @@
+〇 Javaコンパイル時に -encoding utf-8 の入力を不要にする設定方法
+
+Win+Rキーで「ファイル名を指定して実行」を開き、 
+    powershell と入力してOKをクリック
+    PowerShellが起動したら、
+
+次のコマンドを実行 
+ > code $PROFILE
+ 
+ PowerShellのプロファイルが開くので、次の 1行を追加して保存
+
+ function javac { javac.exe -encoding utf-8 $args }
+
+一度VSCodeを終了し、再起動
+今後はコンパイル時に -encoding utf-8 の指定不要になります。
+    コンパイル
+    > javac ファイル名.java
+    実行
+    > java ファイル名
+
+ 
